@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahendra K | AI &amp; ML Engineer · Portfolio</title>
+<meta name="description" content="Portfolio of Mahendra K, Computer Science and Engineering (AI &amp; ML) student building AI-powered applications with Python and FastAPI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Loader -->
+<div class="loader" id="loader" aria-hidden="true"><div class="loader-ring"></div><span>MK</span></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="progress" id="progress"></div>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <a href="#home" class="logo" aria-label="Mahendra K, home">MK<i></i></a>
+  <nav id="menu" aria-label="Primary">
+    <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
+    <a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-tools">
+    <button class="icon-btn" id="themeBtn" aria-label="Switch to light theme" title="Toggle theme"><span class="sun">☀</span><span class="moon">☾</span></button>
+    <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="chip">Computer Science &amp; Engineering (AI &amp; ML) · 2023 – 2027</p>
+    <h1><span class="line"><span>Mahendra K</span></span><span class="line grad"><span>builds AI that</span></span><span class="line grad"><span>talks to data.</span></span></h1>
+    <p class="lead">Backend and AI developer working with <b>Python, FastAPI, SQL</b> and LLMs, turning ideas into agentic, full-stack systems. Hackathon podium finisher and published author.</p>
+    <p class="role">I am a <span id="typed"></span><i class="caret"></i></p>
+    <div class="cta">
+      <a class="btn primary magnetic" href="#projects">View projects</a>
+      <a class="btn ghost magnetic" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <!-- Hero visual: the architecture of GradeBoard Agent -->
+  <div class="hero-viz glass" aria-label="GradeBoard Agent architecture: UI, AI Agent, FastAPI Backend, SQLite Database">
+    <p class="viz-title">GradeBoard Agent · architecture</p>
+    <ol class="flow">
+      <li><b>UI</b><small>Conversational interface</small></li>
+      <li><b>AI Agent</b><small>Interprets user intent</small></li>
+      <li><b>FastAPI Backend</b><small>Automated CRUD operations</small></li>
+      <li><b>SQLite Database</b><small>Academic records</small></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats reveal" aria-label="Highlights">
+  <div class="glass stat"><b data-count="2">0</b><span>AI projects built</span></div>
+  <div class="glass stat"><b data-count="60">0</b><span>hours, IBM SkillsBuild internship</span></div>
+  <div class="glass stat"><b data-count="70">0</b><span>students led in a city clean-up drive</span></div>
+  <div class="glass stat"><b data-count="3" data-suffix="rd">0</b><span>place, SRISHTI Hackathon</span></div>
+</section>
+
+<!-- About -->
+<section id="about" class="sec">
+  <h2 class="reveal">About me</h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <p>I am a Computer Science and Engineering student specializing in AI &amp; ML, with hands-on experience in software development, backend engineering, and AI-powered applications.</p>
+      <p>I am proficient in Python, FastAPI, SQL, and database integration. I design application architectures, implement working solutions, and integrate AI capabilities into full-stack systems.</p>
+      <p>My foundation in Data Structures &amp; Algorithms, OOP, DBMS, and analytical problem-solving is backed by leadership through hackathons and technical initiatives.</p>
+    </div>
+    <ul class="glass about-card reveal">
+      <li><span>Focus</span>AI &amp; ML, backend engineering</li>
+      <li><span>Core stack</span>Python · FastAPI · SQL</li>
+      <li><span>Strengths</span>DSA, OOP, DBMS, analytical reasoning</li>
+      <li><span>Leadership</span>Hackathons, editorial board, community drive</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="sec">
+  <h2 class="reveal">Education &amp; internship</h2>
+  <div class="timeline">
+    <article class="glass t-item reveal"><time>2023 – 2027</time><h3>Bachelor of Engineering, Computer Science and Engineering (AI &amp; ML)</h3><p>Maharaja Institute of Technology Mysore</p></article>
+    <article class="glass t-item reveal"><time>2021 – 2023</time><h3>Pre-University Certificate (PUC), PCMC</h3><p>BGS PU College, Mysore · Karnataka State Board · <b>90%</b></p></article>
+    <article class="glass t-item reveal"><time>Internship</time><h3>Data Analytics with AI, IBM SkillsBuild</h3><p>A 60-hour academic internship by IBM SkillsBuild in collaboration with AICTE and BharatCares, with structured learning and practical assignments.</p></article>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="sec">
+  <h2 class="reveal">Skills</h2>
+  <div class="skills" id="skills-grid"></div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="sec">
+  <h2 class="reveal">Projects</h2>
+  <div class="projects">
+    <article class="glass project tilt reveal">
+      <div class="p-top"><h3>GradeBoard Agent</h3><span class="chip">Agentic AI · Academic Management</span></div>
+      <p>An AI-driven system that interprets user intent and executes automated CRUD operations, with real-time analytics dashboards for data-driven decisions.</p>
+      <ul class="tags"><li>Python</li><li>FastAPI</li><li>SQLite</li><li>Generative AI</li></ul>
+      <button class="more" aria-expanded="false" aria-controls="d1">Project details</button>
+      <div class="details" id="d1"><div>
+        <ul>
+          <li>Interprets user intent and executes automated CRUD operations.</li>
+          <li>Layered architecture: UI → AI Agent → FastAPI Backend → SQLite Database.</li>
+          <li>Real-time analytics dashboards support data-driven decision-making.</li>
+          <li>Published as a paper in IARJSET (see Publication).</li>
+        </ul>
+      </div></div>
+    </article>
+    <article class="glass project tilt reveal">
+      <div class="p-top"><h3>Care Companion</h3><span class="chip">AI-Powered Caregiver Support</span></div>
+      <p>An AI-based platform that detects caregiver stress and burnout through real-time sentiment analysis, and offers journaling and mindfulness support.</p>
+      <ul class="tags"><li>React</li><li>FastAPI</li><li>Firebase Firestore</li><li>Groq Cloud</li><li>Llama 3.3</li><li>Web Speech API</li></ul>
+      <button class="more" aria-expanded="false" aria-controls="d2">Project details</button>
+      <div class="details" id="d2"><div>
+        <ul>
+          <li>Detects caregiver stress and burnout with real-time sentiment analysis.</li>
+          <li>Voice and text journaling, plus AI-triggered mindfulness support to improve caregiver well-being.</li>
+          <li>Scalable architecture across React, FastAPI, Firebase, and Groq Cloud, with SOS alerts.</li>
+          <li>3rd place at the SRISHTI Hackathon, SDMCET.</li>
+        </ul>
+      </div></div>
+    </article>
+  </div>
+</section>
+
+<!-- Achievements -->
+<section id="achievements" class="sec">
+  <h2 class="reveal">Achievements, certificates &amp; publication</h2>
+  <div class="ach">
+    <article class="glass reveal"><h3>3rd Place, SRISHTI Hackathon</h3><p>SDMCET. Developed CareCompanion, an AI-powered caregiver support system.</p></article>
+    <article class="glass reveal"><h3>Head of Editorial Board</h3><p>Led a team of 4 to create and publish the department’s COSMIC magazine for InnovateX, the department’s student club, where I served as Technical Coordinator.</p></article>
+    <article class="glass reveal"><h3>Community Initiative</h3><p>Led 70 students in the “Namma Mysuru, Swacha Mysuru” drive with CII &amp; Young Indians.</p></article>
+    <article class="glass reveal"><h3>Certificates</h3><p><a href="https://drive.google.com/file/d/1uJP5RQUWv6Xj6NhumlcV1Aki1n13hdzx/view?usp=drive_link" target="_blank" rel="noopener">IBM Data Science Fundamentals using Python &amp; SQL</a><br><a href="https://drive.google.com/file/d/11pSNVn4rl8e0nnQTpnrQ97cuS46ALdEA/view?usp=sharing" target="_blank" rel="noopener">Generative AI Essentials: Using LLMs to Work with Data</a></p></article>
+    <article class="glass wide reveal"><h3>Publication · IARJSET</h3><p><b>GradeBoardAgent: An AI-Driven Conversational System for Academic Performance Monitoring.</b> Developed an AI-driven academic performance monitoring system using FastAPI, SQLite, and Generative AI to enable real-time analytics and conversational access to student data.</p><a class="btn ghost magnetic" href="https://iarjset.com/papers/gradeboardagent-an-ai-driven-conversational-system-for-academic-performance-monitoring/" target="_blank" rel="noopener">Read the paper</a></article>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="sec contact">
+  <h2 class="reveal">Let’s build something</h2>
+  <p class="lead reveal">Open to conversations about software, backend, and AI projects.</p>
+  <div class="contact-grid reveal">
+    <a class="glass c-card magnetic" href="mailto:mahendragowda1205@gmail.com"><span>Email</span>mahendragowda1205@gmail.com</a>
+    <a class="glass c-card magnetic" href="tel:+919902861915"><span>Phone</span>9902861915</a>
+    <a class="glass c-card magnetic" href="https://github.com/Mahendra-K1205" target="_blank" rel="noopener"><span>GitHub</span>Mahendra-K1205</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><p>© <span id="year"></span> Mahendra K</p><a href="#home" class="to-top">Back to top</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
